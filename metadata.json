@@ -1,1 +1,8 @@
-{"version": "0.1.1","description": "Panel buttons for moc player", "uuid": "mockeys@mafflin", "name": "MOC keys", "shell-version": ["3.18.1"]}
+{
+  "url": "https://github.com/mafflin/mockeys",
+  "version": "0.1.1",
+  "description": "Panel buttons for moc player",
+  "uuid": "mockeys@mafflin",
+  "name": "MOC keys",
+  "shell-version": ["3.18.1"]
+}
