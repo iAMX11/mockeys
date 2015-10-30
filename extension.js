@@ -1,21 +1,17 @@
 
 const St = imports.gi.St;
 const Main = imports.ui.main;
-
-let button1, button2, button3;
+const Util = imports.misc.util;
 
 function _mocPause() {
-  const Util = imports.misc.util;
   Util.spawn(['mocp', '-G']);
 }
 
 function _mocPrev() {
-  const Util = imports.misc.util;
   Util.spawn(['mocp', '-r']);
 }
 
 function _mocNext() {
-  const Util = imports.misc.util;
   Util.spawn(['mocp', '-f']);
 }
 
