@@ -1,2 +1,2 @@
 # mockeys
-Gnome-shell panel buttons for MOC player
+Gnome-shell extension that adds buttons for MOC player to the panel
