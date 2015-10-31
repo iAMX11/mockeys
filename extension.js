@@ -3,6 +3,8 @@ const St = imports.gi.St;
 const Main = imports.ui.main;
 const Util = imports.misc.util;
 
+let button;
+
 function _mocPause() {
   Util.spawn(['mocp', '-G']);
 }
@@ -36,9 +38,9 @@ function init() {
 }
 
 function enable() {
+    Main.panel._rightBox.insert_child_at_index(button3, 0);
+    Main.panel._rightBox.insert_child_at_index(button2, 0);
     Main.panel._rightBox.insert_child_at_index(button1, 0);
-    Main.panel._rightBox.insert_child_at_index(button2, 1);
-    Main.panel._rightBox.insert_child_at_index(button3, 2);
 }
 
 function disable() {
