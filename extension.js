@@ -38,9 +38,9 @@ function init() {
 }
 
 function enable() {
-    Main.panel._rightBox.insert_child_at_index(button3, 0);
-    Main.panel._rightBox.insert_child_at_index(button2, 0);
-    Main.panel._rightBox.insert_child_at_index(button1, 0);
+    Main.panel._rightBox.insert_child_at_index(button3, 2);
+    Main.panel._rightBox.insert_child_at_index(button2, 2);
+    Main.panel._rightBox.insert_child_at_index(button1, 2);
 }
 
 function disable() {
