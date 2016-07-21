@@ -1,5 +1,13 @@
 # mockeys
+
 Gnome-shell extension that adds buttons for MOC player to the panel.
+
+### Changelog
+
+* v.8
+  - If mocp is not running, pause button will start it.
+
+### Settings
 
 To change buttons position in the right menu, replace ```2``` by ```0``` or ```1``` in
 ~/.local/share/gnome-shell/extensions/mockeys@mafflin/extension.js
