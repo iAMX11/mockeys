@@ -1,0 +1,35 @@
+#!/bin/bash
+
+option=$1
+value=$2
+
+if [ -z "$value" ]; then
+  value=5
+fi
+
+sleep 0.1
+
+case $option in
+  "pause" | "-x"  )
+    mocp -G || xdotool key alt+shift+x
+    ;;
+  "prev" | "-z"   )
+    mocp -p || xdotool key alt+shift+z
+    ;;
+  "next" | "-b"   )
+    mocp -f || xdotool key alt+shift+b
+    ;;
+  "up" | "-u"     )
+    pactl set-sink-mute 0 false
+    pactl set-sink-volume 0 +$value%
+    ;;
+  "down" | "-d"   )
+    pactl set-sink-mute 0 false
+    pactl set-sink-volume 0 -$value%
+    ;;
+  *               )
+    exit 1
+    ;;
+esac
+
+exit 0
