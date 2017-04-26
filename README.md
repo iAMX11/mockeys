@@ -4,6 +4,9 @@ Gnome-shell extension that adds buttons for MOC player to the panel.
 
 ### Changelog
 
+* v.10
+  - BUMP to gnome-shell 3.24
+
 * v.8
   - If mocp is not running, pause button will start it.
 
